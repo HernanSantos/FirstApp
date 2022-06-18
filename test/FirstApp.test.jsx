@@ -17,6 +17,14 @@ describe('prueba en FirstApp', () => {
 
         const h1 = container.querySelector('h1');
         expect(h1.innerHTML).toContain(title);
+    });
 
+    test('mostrar subtitulo', () => {
+        
+        const title = "Hola, soy Goku";
+        const subTitle = "Soy un subtitulo";
+        const {getAllByText} = render(<FirstApp title={title} subTitle={subTitle}/>);
+
+        expect(getAllByText(subTitle).length).toBe(2);
     });
 })
