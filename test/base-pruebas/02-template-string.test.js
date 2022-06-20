@@ -5,7 +5,7 @@ describe("pruebas en archivo 02",()=>{
         const name = "hernan";
         const message = getSaludo(name);
 
-        expect(message).toBe(`Hola ${name}!!!`);
+        expect(message).toBe(`Hola ${name}`);
 
     
     });
